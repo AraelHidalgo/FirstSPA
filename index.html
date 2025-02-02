@@ -1,0 +1,166 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica HTML y CSS</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img src="https://framework-gb.cdn.gob.mx/gobmx/img/logo_blanco.svg" class="logo" alt="Logo Gobierno de México">
+            <div>
+                <ul class="header-menu">
+                     <li>Trámites</li>
+                     <li>Gobierno</li>
+                     <li>Búsqueda</li>
+                </ul>
+            </div>
+         </div>
+    </header>
+    <ol class="buffer">
+        <li><strong>Con la Clave Única de Registro de Población (CURP).</strong></li>
+        <li><strong>A través de los datos personales.</strong></li>
+        </ol>
+    <main>
+        <div class="datos_personales">
+            <form class="formulario">
+                <table>
+                    <tr>
+                        <td><label for="nombre">Nombre:</label></td>
+                        <td><input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="primer_apellido">Primer Apellido:</label></td>
+                        <td><input type="text" id="primer_apellido" name="primer_apellido" placeholder="Ingresa tu primer apellido" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="segundo_apellido">Segundo Apellido:</label></td>
+                        <td><input type="text" id="segundo_apellido" name="segundo_apellido" placeholder="Ingresa tu segundo apellido" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dia_nacimiento">Día de Nacimiento:</label></td>
+                        <td>
+                            <select id="dia_nacimiento" name="dia_nacimiento" required>
+                                <option value="" disabled>Selecciona el día</option>
+                                <option value="1">01</option>
+                                <option value="2">02</option>
+                                <option value="3">03</option>
+                                <option value="4">04</option>
+                                <option value="5">05</option>
+                                <option value="6">06</option>
+                                <option value="7">07</option>
+                                <option value="8">08</option>
+                                <option value="9">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="mes_nacimiento">Mes de Nacimiento:</label></td>
+                            <td>
+                                <select id="mes_nacimiento" name="mes_nacimiento" required>
+                                    <option value="" disabled>Selecciona el mes</option>
+                                    <option value="enero">01</option>
+                                    <option value="febrero">02</option>
+                                    <option value="marzo">03</option>
+                                    <option value="abril">04</option>
+                                    <option value="mayo">05</option>
+                                    <option value="junio">06</option>
+                                    <option value="julio">07</option>
+                                    <option value="agosto">08</option>
+                                    <option value="septiembre">09</option>
+                                    <option value="octubre">10</option>
+                                    <option value="noviembre">11</option>
+                                    <option value="diciembre">12</option>
+                                </select>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td><label for="anio_nacimiento">Año de Nacimiento:</label></td>
+                        <td><input type="number" id="anio_nacimiento" name="anio_nacimiento" placeholder="Ingresa el año, ej. 1989" min="1900" max="2025" required></td>
+                    </tr>
+                    <tr>
+                        
+                        <td><label for="sexo">Sexo:</label></td>
+                        <td>
+                            <select id="sexo" name="sexo" required>
+                                <option value="" disabled>Selecciona tu sexo</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="estado">Estado:</label></td>
+                        <td>
+                            <select id="estado" name="estado" required>
+                                <option value="" disabled>Selecciona tu estado</option>
+                                <option value="Aguascalientes">Aguascalientes</option>
+                                <option value="Baja California">Baja California</option>
+                                <option value="Baja California Sur">Baja California Sur</option>
+                                <option value="Campeche">Campeche</option>
+                                <option value="Chiapas">Chiapas</option>
+                                <option value="Chihuahua">Chihuahua</option>
+                                <option value="Ciudad de México">Ciudad de México</option>
+                                <option value="Coahuila">Coahuila</option>
+                                <option value="Colima">Colima</option>
+                                <option value="Durango">Durango</option>
+                                <option value="Estado de México">Estado de México</option>
+                                <option value="Guanajuato">Guanajuato</option>
+                                <option value="Guerrero">Guerrero</option>
+                                <option value="Hidalgo">Hidalgo</option>
+                                <option value="Jalisco">Jalisco</option>
+                                <option value="Michoacán">Michoacán</option>
+                                <option value="Morelos">Morelos</option>
+                                <option value="Nayarit">Nayarit</option>
+                                <option value="Nuevo León">Nuevo León</option>
+                                <option value="Oaxaca">Oaxaca</option>
+                                <option value="Puebla">Puebla</option>
+                                <option value="Querétaro">Querétaro</option>
+                                <option value="Quintana Roo">Quintana Roo</option>
+                                <option value="San Luis Potosí">San Luis Potosí</option>
+                                <option value="Sinaloa">Sinaloa</option>
+                                <option value="Sonora">Sonora</option>
+                                <option value="Tabasco">Tabasco</option>
+                                <option value="Tamaulipas">Tamaulipas</option>
+                                <option value="Tlaxcala">Tlaxcala</option>
+                                <option value="Veracruz">Veracruz</option>
+                                <option value="Yucatán">Yucatán</option>
+                                <option value="Zacatecas">Zacatecas</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;"><button type="submit">Enviar</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Práctica HTML y CSS</p>
+    </footer>
+</body>
+</html>
