@@ -23,13 +23,3 @@ Este archivo contiene la estructura básica del documento HTML, incluyendo etiqu
 ### `styles/style.css`
 
 Este archivo contiene las reglas de estilo CSS que se aplican a los elementos del archivo `index.html`. Aquí puedes definir estilos como colores, fuentes, márgenes, y diseño de la página.
-
-## Instrucciones
-
-1. Abre el archivo `index.html` en un navegador web para ver la página.
-2. Modifica el archivo `styles/style.css` para experimentar con diferentes estilos.
-3. Personaliza el contenido de `index.html` para adaptarlo a tus necesidades.
-
-## Contribuciones
-
-Si deseas contribuir a este proyecto, siéntete libre de hacer un fork y enviar un pull request con tus mejoras.
