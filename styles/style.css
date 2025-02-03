@@ -1,63 +1,104 @@
 :root {
     --primary-color: #611232;
     --secondary-color: #ffffff;
-    --background-color: #a7a7a7;
+    --background-color: #cfcfcf;
     --text-color: #000000;
     --form-background-color: #f9f9f9;
 }
 
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+td,
+th {
+    border: 0px solid #dddddd;
+    text-align: left;
+
+}
+
+/*
+@media (max-width: 600px) {
+    .responsive-table th,
+    .responsive-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .responsive-table tr {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .responsive-table th {
+        text-align: left;
+    }
+}
+    */
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--background-color);
+    background-color: var(--secondary-color);
     color: var(--text-color);
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Asegura que el body ocupe al menos el 100% de la altura de la ventana */
+    min-height: 100vh;
 }
 
 h1 {
     font-size: 54px
 }
-select:hover{
+
+select:hover {
     cursor: pointer;
+}
+
+.tabs-a {
+    color: #FFF;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border-bottom-color: transparent;
+    border-radius: 4px;
+    cursor: default;
 }
 
 .header {
     background: var(--primary-color);
     color: var(--secondary-color);
-    padding: 10px 0;
+    padding: 14px 0;
 }
 
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
 .logo {
-    width: 100px;
+    width: 95px;
     height: auto;
     margin-right: 20px;
 }
 
 .header-menu {
-    display: flex; /* Alinea los elementos del menú horizontalmente */
-    list-style: none; /* Quita los puntos de la lista */
+    display: flex;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 
 .header-menu li {
-    margin-left: 20px; /* Espacio entre los elementos del menú */
-}
-
-.header-menu li {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
     color: var(--secondary-color);
     text-decoration: none;
     font-weight: bold;
@@ -68,17 +109,37 @@ select:hover{
     cursor: pointer;
 }
 
+.icono-lupa {
+    width: 24px;
+    height: 24px;
+    fill: var(--secondary-color);
+}
+
 
 main {
-    flex: 1; 
+    flex: 1;
     padding: 20px;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
 }
 
+.container {
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.titulo {
+    margin-bottom: 20px;
+}
+
+.opciones {
+    margin-bottom: 60px;
+}
 
 .datos_personales {
+    margin-bottom: 20px;
     background-color: var(--form-background-color);
     padding: 20px;
     border-radius: 10px;
@@ -93,20 +154,26 @@ main {
 }
 
 .formulario td {
-    padding: 10px;
+    padding: 8px;
 }
 
 .formulario label {
     font-weight: bold;
+    font-size: large;
+    display: block;
+    margin-bottom: -4px;
 }
 
 .formulario input,
 .formulario select {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 18px;
+    box-sizing: border-box;
+    height: 40px;
+    color: gray;
 }
 
 .formulario input:focus,
@@ -122,22 +189,100 @@ main {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 12px;
     width: 100%;
 }
 
 .formulario button:hover {
-    background-color: #6e1f00; /* Color más oscuro al hacer hover */
+    background-color: #6e1f00;
 }
 
-/* Footer */
+
 footer {
     text-align: center;
     padding: 10px 0;
     background: var(--primary-color);
     color: var(--secondary-color);
     width: 100%;
-    margin-top: auto; /* Asegura que el footer se quede en la parte inferior */
+    margin-top: auto;
+
 }
 
-    
+.gitInformacion {
+    width: 30px;
+    height: auto;
+    color: white;
+}
+
+.github-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* Espacio entre el icono y el texto */
+    margin-bottom: 20px;
+}
+
+.a-git:link {
+    color: white;
+    text-decoration: none;
+}
+
+.a-git:visited {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.a-git:active {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+button {
+    background-color: #fcfcfc;
+    border: 2px solid #611232;
+    padding: 10px;
+    font-size: 1.1rem;
+    width: 8em;
+    margin-bottom: 3px;
+    border-radius: 6px;
+    color: var(--primary-color);
+    cursor: pointer;
+    display: flex; 
+    align-items: center;
+    justify-content:flex-start; 
+}
+
+button:active {
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+}
+
+button:hover:not(:disabled) {
+    background: var(--primary-color);
+    color: white;
+}
+
+button:disabled {
+    cursor: auto;
+    color: rgb(255, 254, 254);
+}
+
+.icono-lupa-boton {
+    width: 40px;
+    margin-right: 8px;
+    fill: currentColor; 
+}
+.buscar{
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+
+}
+.buscar-obligatorios{
+    color: #7b7b7b;
+}
